@@ -16,8 +16,10 @@ class CreateTaskPrioritiesTable extends Migration
         Schema::create('task_priorities', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->order();
-            $table->name();
+            $table->unsignedBigInteger('task_id');
+            $table->foreign('task_id')->references('id')->on('tasks');
+            $table->unsignedBigInteger('priority_id');
+            $table->foreign('priority_id')->references('id')->on('priorities');
         });
     }
 
