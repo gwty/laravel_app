@@ -22,8 +22,10 @@ Switch to the repo folder
     
 Install all the dependencies using composer
     `composer install`
-    
+
 Start the local development server
     `php artisan serve`
+
+
     
 You can now access the server at http://localhost:8000
