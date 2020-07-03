@@ -23,6 +23,18 @@ Switch to the repo folder
 Install all the dependencies using composer
     `composer install`
 
+Run npm install
+    `npm install`
+
+Run npm dev
+    `npm run dev`
+
+Run migrations
+    `php artisan migrate`
+
+Run database seeding
+    `php artisan db:seed --class=PrioritySeeder`
+
 Start the local development server
     `php artisan serve`
 
